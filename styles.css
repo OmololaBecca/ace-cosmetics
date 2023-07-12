@@ -239,11 +239,11 @@ letter-spacing: 2px;
        .header-div p{
            width:70px;   
            font-size: 16px;
-           margin-left: 35px;
+           margin-left: 40px;
        }
         
        .fa-search{
-        margin-right: 10px;
+        margin-right: 7px;
         left:15px;
         top:25px;
     }
@@ -266,6 +266,9 @@ letter-spacing: 2px;
     .background-text p{
         font-size: 23px;
         padding: 15px; 
+    }
+    br{
+        display:none;
     }
     .main-div{
         margin-top:100px;
