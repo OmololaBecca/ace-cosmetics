@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,400&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+ font-family:'Poppins';
+}
+.parent-container{
+    background-color: #fffcfc;
+    margin-bottom: 100px;
+
+}
+.header-container{
+     width:100%;
+     /* height:130px; */
+     position:fixed;
+     top: 0;
+     z-index: 999;
+     background-color: #fffcfc;
+
+}
+.header-div{
+    display: flex;
+    justify-content: space-between;
+    padding-top:25px;
+    flex-wrap: wrap;
+} 
+.logo-header-div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo{
+    width:70px !important;
+    
+}
+.ace{
+    font-size: 30px;
+    font-weight: 600; 
+
+}
+
+.header-div p{
+     margin-left: 90px; 
+    border-bottom:3px solid #dad5d5;
+    width:95px;
+    font-size: 20px;
+}
+.fa-search{
+    margin-right: 10px;
+    position: absolute;
+    left:65px;
+}
+
+.header-div button{
+     margin-right: 90px; 
+    width:50px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+}
+.main-div{
+    margin-top:120px;
+}
+
+.background-image{
+    background: url(./Assets/amir-esrafili-eIRO5ZQrfNo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 50px 0px;
+    height: 250px;
+}
+.background-text{
+     width:580px;
+    height:180px;
+    margin-left: 200px;
+    background-color: rgba(253, 253, 253, 0.6);
+    backdrop-filter: blur(5px);
+}
+.background-text p{
+    font-size: 28px;
+    padding: 25px;
+
+}
+.own-skincare-page{
+    margin-top: 70px;
+    height:180px;
+    text-align: left;
+    margin-left: 200px;
+}
+.own-skincare-first-text{
+    font-size: 30px;
+     margin-bottom: 25px;
+
+}
+.skincare-bold{
+ font-weight: 600;
+}
+.own-skincare-second-text{
+    font-size: 15px;
+
+}
+hr{
+    border:2px solid rgb(190, 181, 181);
+}
+
+.product-page{
+    margin-top: 70px;
+    height:800px;
+
+}
+.product-flex{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+.product-flex button{
+    width:200px;
+    height:70px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Poppins';
+}
+
+.product-flex button:focus{
+    border:1px solid #555353
+}
+.first-product{
+    display:flex;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.product-img{
+    width:250px;
+    height:320px;
+    object-fit:cover;
+}
+.first-product-text h1{
+font-size: 30px;
+margin-top: -50px;
+margin-bottom: 25px;
+letter-spacing: 2px;
+}
+.first-product-text p{
+    letter-spacing: 1px;
+     margin-bottom:30px;
+    }
+    .input-div{
+        display:flex;
+        align-items: center;
+    }
+    .input-div p{
+        font-size: 30px;
+    }
+
+    .total-price{
+        margin-bottom:30px;
+        font-size:32px;
+        width: 100px ;
+            height: 40px;
+            text-align: center;
+            border: none;
+        }
+
+        .cart-div{
+            display:flex;
+            gap:15px; 
+        }
+        .cart-div button{
+            width:35px;
+            height:35px;
+            border: none;
+        }
+        .add-cart{
+            width: 125px !important;;
+            height: 35px !important;;
+           border:none;
+        }
+        .number{
+           width:35px;
+            height:35px;
+            border:none;
+            margin: auto 6px;
+            text-align: center;
+        }
+        .first-product-div, .second-product-div,.third-product-div,.fourth-product-div{
+            padding-bottom: 50px;
+        }
+
+
+        /* this is the hidden nd active section */
+
+        .active{
+            border:1px solid #f1f1f1;
+            background: red;
+        }
+        .hidden{
+            display:none;
+        }
+
+
+
+        /* mobile responsiveness section */
+
+        @media(max-width:1200px){
+           
+        }
+
+        @media(max-width:600px){
+            .header-container{
+                width:100%;
+                
+           }
+           .header-div{
+            padding-top:20px;
+        }
+
+        .header-logo{
+            width:40px !important;
+        }
+        .ace{
+            font-size: 22px;
+        
+       }
+       .header-img{
+        width:70px !important;
+
+    }
+       .header-div p{
+           width:70px;   
+           font-size: 16px;
+           margin-left: 35px;
+       }
+        
+       .fa-search{
+        margin-right: 10px;
+        left:15px;
+        top:25px;
+    }
+    .header-div button{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .background-image{
+        padding: 50px 0px;
+        height: 220px;
+    }
+
+    .background-text{
+         width:370px;
+        height:190px;
+        margin:auto;
+        display: block;
+    }
+    .background-text p{
+        font-size: 23px;
+        padding: 15px; 
+    }
+    .main-div{
+        margin-top:100px;
+    }
+    
+    .own-skincare-page{
+        padding: 18px;
+        margin-top: 50px;
+        display: block;
+        margin: auto;
+
+    }
+    .own-skincare-first-text{
+        font-size: 25px;
+         margin-bottom: 25px;
+
+    }
+    .second--hr{
+         display:none;
+
+    }
+    .product-page{
+        margin-top: 100px;
+        height:800px;
+
+    }
+    .product-flex button{
+        width:150px;
+        height:70px;
+    }
+
+    .first-product{
+        margin-top: 60px;
+        gap:20px;
+
+    }
+    .product-img{
+        width:250px;
+        height:250px;
+
+    }
+    .first-product-text h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align:center;
+
+    }
+    .first-product-text p{
+        letter-spacing: 0;
+         margin-bottom:20px;
+        text-align:center;
+        padding: 15px;
+        }
+
+        .input-div{
+            gap:5px;
+            justify-content: center;
+        }
+
+        .input-div p{
+            font-size: 27px;
+        }
+
+        .total-price{
+            font-size:25px;
+            margin-top: 8px;
+            width: 100px ;
+            height: 40px;
+            } 
+            .cart-div{
+                gap:15px;
+                align-items: center;
+                justify-content: center;
+            }
+            /* .cart-div button{
+                width:35px;
+                height:35px;
+
+            } */
+            /* .add-cart{
+                width: 125px !important;
+                height: 35px !important;;
+               border:none;
+            }
+            .number{
+               width:35px;
+                height:35px;
+                border:none;
+                margin: auto 6px;
+                text-align: center;
+            } */
+
+        }
